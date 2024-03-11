@@ -51,7 +51,7 @@ def search_option():
     search_combo = easygui.buttonbox(msg, title, categories)
     if search_combo != "Back": 
         for items in combos[search_combo]: 
-            output += f"\n{items}: {combos[search_combo][items]}" 
+            output += f"\n{items}: ${combos[search_combo][items]}" 
         title = f"{search_combo}"
         easygui.msgbox(output, title) 
 
