@@ -40,6 +40,4 @@ print(pc_cards)
 """USER CONVERSION"""
 for i in user_values:
     if i == "Jack" or i == "Queen" or i == "King":
-    
-
-
+        print("e")
