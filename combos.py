@@ -66,24 +66,26 @@ def add_combo():
     msg = "Enter the first item in the combo"
     item_1 = easygui.enterbox(msg)
     msg = "Enter the first item's price"
-    item_1_price = easygui.enterbox(msg)
+    type(float);item_1_price = easygui.enterbox(msg)
     
 
     msg = "Enter the second item of the combo"
     item_2 = easygui.enterbox(msg)
     msg = "Enter the second item's price"
-    item_2_price = easygui.enterbox(msg)
+    type(float);item_2_price = easygui.enterbox(msg)
 
 
     msg ="Enter the third item of the combo"
     item_3 = easygui.enterbox(msg)
     msg = "Enter the third item's price"
-    item_3_price = easygui.enterbox(msg)
+    type(float);item_3_price = easygui.enterbox(msg)
 
-    msg = f"""What is the total price for this combo? (${item_1_price} +
-              ${item_2_price} + ${item_3_price} individualy)"""
+    type(float);total = item_3_price + item_2_price + item_1_price
+    """
+    msg = f"What is the total price for this combo? (${item_1_price} +
+              ${item_2_price} + ${item_3_price} individualy)
     total = easygui.enterbox(msg)
-
+    """
     #add the new entry to the combos dictionary
     combos[combo] = {
         item_1:  item_1_price,
