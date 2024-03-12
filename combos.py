@@ -80,15 +80,16 @@ def add_combo():
     msg = "Enter the third item's price"
     item_3_price = easygui.enterbox(msg)
 
-    msg = "What is the total price for this combo?"
+    msg = f"""What is the total price for this combo? (${item_1_price} +
+              ${item_2_price} + ${item_3_price} individualy)"""
     total = easygui.enterbox(msg)
 
     #add the new entry to the combos dictionary
     combos[combo] = {
-        item_1: "$" + item_1_price,
-        item_2: "$" + item_2_price,
-        item_3: "$" + item_3_price,
-        "Total": "$" + total,
+        item_1:  item_1_price,
+        item_2: item_2_price,
+        item_3: item_3_price,
+        "Total": total,
     }
     msg = f"{combo} has been added to the database."
     title ="COMBO ADDED"
